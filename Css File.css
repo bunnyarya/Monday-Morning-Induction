@@ -223,6 +223,7 @@ footer
 .responsive1 {
   width: 80%;
   height: auto;
+  border-radius: 7px;
 }
 
 .responsive
