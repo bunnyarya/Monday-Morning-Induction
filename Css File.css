@@ -15,11 +15,6 @@ h2
   color: #445364;
 }
 
-.row
-{
-  overflow: hidden;
-  margin-top: 300px;
-}
 .column21_1 h2,.column21_2 h2
 {
   color: #3a172b;
@@ -38,8 +33,8 @@ h2
 
 header
 {
-  height: 100px;
   width: 80%;
+  height:auto;
   margin-right: 10%;
   margin-left: 10%;
   background-image: url("https://image.freepik.com/free-vector/abstract-circle-background-with-glowing-lines_112380-65.jpg");
@@ -47,11 +42,9 @@ header
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: 0.4s;
   position: fixed;
   top: 0;
   z-index: 1;
-  height: auto;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -94,7 +87,6 @@ header li a
 {
   color: #b7e4c7;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
@@ -154,12 +146,13 @@ header .active
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-top: 250px;
+  margin-top: 18%;
   background-image: url('https://image.freepik.com/free-photo/empty-wooden-table-with-smoke-float-up-dark-background_68495-135.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-size: 30px;
 }
 
 .responsive-iframe 
@@ -235,7 +228,7 @@ p.editorial
 {
   margin-top: 2%;
   width: 100%;
-  float: left;
+  float: right;
 }
 .box
 {
@@ -253,16 +246,11 @@ input[type=text]
   border-radius: 40px;
   font-size: 16px;
   background-color: #fff;
-  background-image: url('https://image.freepik.com/free-vector/illustration-magnifying-glass-icon_53876-5613.jpg');
-  background-position: 10px 10px; 
-  background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   -webkit-transition: width 2s ease-in-out;
   transition: width 2s cubic-bezier(0.9, -0.54, 0, 1.18);
   overflow: visible;
   float:left;
-  margin-left: 150px;
-
 }
 
 input[type=text]:focus {
@@ -284,6 +272,7 @@ footer
   background-color: #3A172B55;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 60px;
 }
 
 .bottom-fixed
@@ -303,7 +292,8 @@ footer
   display: inline-block;
 }
 
-.responsive1 {
+.responsive1 
+{
   width: 80%;
   height: auto;
   border-radius: 7px;
@@ -317,134 +307,149 @@ footer
   margin: 0;
 }
 
-.box0
+.responsive2
 {
-  margin-bottom: 60px;
+  margin-right: 15px;
+  height: 170px;
 }
 
-
-@media screen and (max-width: 1080px )
+@media screen and (max-width: 1800px)
 {
-  .column111 
-{
-  float: left;
-  width: 80%;
-  padding: 0px;
+  .container
+  {
+    margin-top: 22%;
+  }
 }
 
-header #logo
+@media screen and (max-width: 1080px)
 {
-  font-size: 30px;
-}
+  #navbar-right 
+  {
+  display: block;
+  float: right;
+  padding-top: 2.5%;
+  padding-right: 7%;
+  }
 
-header a
-{
-  font-size: 16px;
-}
-.container
-{
-  font-size: 30px;
-}
+  header #logo h1
+  {
+    font-size: 35px;
+  }
 
-.responsive
-{
-  height: 225px;
-}
+  header a
+  {
+    font-size: 16px;
+  }
 
-.row
-{
-  margin-top: 300px;
-}
+  
+  input[type=text] 
+  {
+    width: 75px;
+    font-size: 10px;
+    padding: 8px 10px 8px 20px;
+  }
 
-.column1111
-{
-  width: 40%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
-}
 
-.box0
-{
-  margin-bottom: 75px;
-}
+  .container
+  {
+    margin-top: 26%;
+    font-size: 30px;
+  }
+ 
+  footer
+  {
+    font-size: 25px;
+  }
+
+  .responsive
+  {
+    height: 225px;
+  }
+
+  .column111,.column21_1,.column21_2
+  {
+    width: 95%;
+  }
+
+    .responsive2
+  {
+  margin-right: 10px;
+  height: 130px;
+  }
 
 }
 
 @media screen and (max-width: 600px )
 {
+  header
+  {
+    position: absolute;
+  }
+  
+  header #logo h1
+  {
+    font-size: 30px;
+  }
 
-header a 
-{
-  font-size: 12px;
-}
- 
-header #logo 
-{
-  font-size: 20px;
-  font-weight: bold;
-  transition: 0.4s;
-}
+  header a 
+  {
+    font-size: 12px;
+  }
 
-.column111,.column21_1,.column21_2 
-{
-  float: left;
-  width: 80%;
-  font-size: 25px;
-  padding: 0px;
-}
+  .container
+  {
+    font-size: 25px;
+  }
+  
+  footer
+  {
+    font-size: 20px;
+  }
 
-.responsive
-{
-  height: 150px;
-}
+  .responsive
+  {
+    height: 150px;
+  }
 
-footer
-{
-  font-size: 20px;
-}
-
-header #navbar-right
-{
-  margin-right: 25px;
-  width: 30%;
-  overflow: hidden;
-}
+  .responsive2
+  {
+  margin-right: 7px;
+  height: 80px;
+  }
 
 }
 
 @media screen and (max-width: 510px) 
 {
+  input[type=text] 
+  {
+    width: 60px;
+    font-size: 10px;
+    padding: 4px 6.5px 4px 12px;
+  }
+
+  #navbar-right 
+  {
+    float: right;
+    padding-top: 1.5%;
+    padding-right: 5%;
+  }
+  header #logo h1
+  {
+  font-size: 25px;
+  }
 
   header a 
   {
     font-size: 10px;
   }
-   
-  header #logo 
+
+  .container
   {
-    font-size: 10px;
-    font-weight: bold;
-    transition: 0.4s;
-  }
-  
-    .column111,.column21_1,.column21_2
-  {
-    float: left;
-    width: 80%;
-    font-size: 15px;
-    padding: 0px;
+    margin-top: 30%;
+    font-size: 20px;
   }
 
-  header #navbar-right
-  {
-    margin-right: 20px;
-  }
-  
-  .column1111
-  {
-    font-size: 5px;
-    overflow: hidden;
-  }
   footer
   {
     font-size: 10px;
@@ -455,13 +460,18 @@ header #navbar-right
     height: 100px;
   }
 
-  .box0
+  .responsive2
   {
-    margin-bottom: 35px;
+    margin-right: 4px;
+    height: 40px;
   }
 
-.row
-{
-  margin-top: 200px;
 }
+
+@media screen and (max-width: 370px) 
+{
+  .container
+  {
+    margin-top: 65%;
+  }
 }
