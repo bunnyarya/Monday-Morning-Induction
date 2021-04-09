@@ -1,25 +1,38 @@
 body 
 {
   background-color: #C0FDFF;
-  color: #E2AFFF; 
-  background-image: url('https://image.freepik.com/free-photo/dark-blue-wooden-wall-texture_53876-97242.jpg');
+  color: #474d57; 
+  background-image: url('https://image.freepik.com/free-photo/black-brick-wall-textured-background_53876-63572.jpg');
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
-  background-size: cover;
   align-self: center;
+  margin: 0%;
 }
 
-.container
+h2
 {
-  margin-right: 10%;
-  margin-left: 10%;
+  color: #445364;
 }
 
 .row
 {
   overflow: hidden;
   margin-top: 300px;
+}
+.column21_1 h2,.column21_2 h2
+{
+  color: #3a172b;
+}
+.column21_1,.column21_2
+{
+  color: #66294b;
+}
+
+.container
+{
+  margin-right: 15%;
+  margin-left: 15%;
   font-size: 30px;
 }
 
@@ -29,7 +42,7 @@ header
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  background-image: url("https://image.freepik.com/free-photo/blue-alarm-clock-fork-knife-colored-paper-background-intermittent-fasting-concept-horizontal-banner-image_107210-1174.jpg");
+  background-image: url("https://image.freepik.com/free-vector/abstract-circle-background-with-glowing-lines_112380-65.jpg");
   background-attachment:unset;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,17 +52,18 @@ header
   top: 0;
   z-index: 1;
   height: auto;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
 }
  
-header a 
+header a
 {
   float: left;
   color: black;
-  text-align: center;
+  text-align: left;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 20px; 
   line-height: 25px;
   border-radius: 4px;
 }
@@ -62,25 +76,43 @@ header #logo
   width: 20%;
 
 }
-  
-header a:hover 
+header ul 
 {
-  background-color: #ddd;
-  color: black;
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
 }
-  
-header a.active 
+
+header li {
+  display: inline;
+  float: left;
+}
+
+header li a 
 {
-  background-color: dodgerblue;
-  color: white;
+  color: #b7e4c7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-  
+
+header li a:hover:not(.active) 
+{
+  background-color: #1b433299;
+}
+
+header .active 
+{
+  background-color: #1e609199;
+}
+
 #navbar-right 
 {
   float: right;
-  font-size: x-large;
-  margin-right: 10%;
-  margin-top: 5%;
+  padding-top: 5%;
+  padding-right: 10%;
 }
 
 .dropdown 
@@ -88,12 +120,16 @@ header a.active
   position: relative;
   display: inline-block;
 }
-  
+
+.editorial img
+{
+  float: left;
+}
 .dropdown-content 
 {
+  margin-top: 2%;
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
   min-width: 160px;
   z-index: 2;
   text-align: left;
@@ -102,7 +138,8 @@ header a.active
 .dropdown:hover .dropdown-content 
 {
   display: block;
-  background: #9006;
+  background: #00000066;
+  margin-top:10%;
 }
 
 .column111 
@@ -118,6 +155,11 @@ header a.active
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 250px;
+  background-image: url('https://image.freepik.com/free-photo/empty-wooden-table-with-smoke-float-up-dark-background_68495-135.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .responsive-iframe 
@@ -154,7 +196,6 @@ header a.active
   padding: 10px;
 }
 
-
 .column_p
 {
   margin-left: 5px;
@@ -176,11 +217,26 @@ header a.active
 {
   float: left;
   width: 20%;
-  font-size: x-large;
   padding: 2.5%;
   text-align: start;
+  color: #3F5BCA;
 }
 
+.editorial
+{
+  width: 95%;
+  margin-top: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  overflow: hidden;
+}
+
+p.editorial
+{
+  margin-top: 2%;
+  width: 100%;
+  float: left;
+}
 .box
 {
   background-color: #616161af;
@@ -188,17 +244,44 @@ header a.active
   width: 100%;
 }
 
+input[type=text] 
+{
+  position: relative;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-size: 16px;
+  background-color: #fff;
+  background-image: url('https://image.freepik.com/free-vector/illustration-magnifying-glass-icon_53876-5613.jpg');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s cubic-bezier(0.9, -0.54, 0, 1.18);
+  overflow: visible;
+  float:left;
+  margin-left: 150px;
+
+}
+
+input[type=text]:focus {
+  width: 80%;
+}
+
 footer
 {
-  background-color: #616161af;
+  background-color: #0d1e2baf;
   overflow: hidden;
   width: 100%;
+  font-size: 20px;
 }
 
 .box0
 {
   text-align: center;
-  background-color: rgba(0,0,0,0.6);
+  color: #A04075;
+  background-color: #3A172B55;
   width: 100%;
   overflow: hidden;
 }
@@ -228,13 +311,17 @@ footer
 
 .responsive
 {
-  height: 250px;
+  position: relative;
+  top: 0;
+  height: 200px;
+  margin: 0;
 }
 
 .box0
 {
   margin-bottom: 60px;
 }
+
 
 @media screen and (max-width: 1080px )
 {
@@ -243,9 +330,17 @@ footer
   float: left;
   width: 80%;
   padding: 0px;
+}
+
+header #logo
+{
   font-size: 30px;
 }
 
+header a
+{
+  font-size: 16px;
+}
 .container
 {
   font-size: 30px;
@@ -273,11 +368,6 @@ footer
   margin-bottom: 75px;
 }
 
-footer
-{
-  font-size: 25px;
-}
-
 }
 
 @media screen and (max-width: 600px )
@@ -285,14 +375,7 @@ footer
 
 header a 
 {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 6px;
-  text-decoration: none;
-  font-size: 12px; 
-  line-height: 18px;
-  border-radius: 2px;
+  font-size: 12px;
 }
  
 header #logo 
@@ -334,14 +417,7 @@ header #navbar-right
 
   header a 
   {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 2px;
-    text-decoration: none;
-    font-size: 10px; 
-    line-height: 18px;
-    border-radius: 2px;
+    font-size: 10px;
   }
    
   header #logo 
