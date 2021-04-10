@@ -312,6 +312,12 @@ footer
   margin-right: 15px;
   height: 170px;
 }
+
+.logo
+{
+  height: 25px;
+  border-radius: 30%;
+}
 @media screen and (max-width: 1800px)
 {
   .container
@@ -370,12 +376,16 @@ footer
     width: 95%;
   }
 
-    .responsive2
+  .responsive2
   {
   margin-right: 10px;
   height: 130px;
   }
 
+  .logo
+  {
+  height: 20px;
+  }
 }
 
 @media screen and (max-width: 600px )
@@ -414,6 +424,11 @@ footer
   {
   margin-right: 7px;
   height: 80px;
+  }
+
+  .logo
+  {
+  height: 15px;
   }
 
 }
@@ -465,6 +480,10 @@ footer
     height: 40px;
   }
 
+  .logo
+  {
+  height: 10px;
+  }
 }
 
 @media screen and (max-width: 370px) 
